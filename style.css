@@ -112,7 +112,7 @@ ul li:hover {
 /* ✅ تحسين زر تغيير الوضع في الوضع الفاتح */
 .light-mode #dark-mode-toggle {
     background: #000;
-    color: white;
+    color: rgb(15, 8, 8);
 }
 
 .light-mode #dark-mode-toggle:hover {
@@ -257,7 +257,7 @@ form input, form textarea {
     border-radius: 5px;
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.1);
-    color: white;
+    color: rgb(14, 5, 5);
     transition: 0.3s;
 }
 
