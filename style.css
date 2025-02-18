@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* 🔴 تحسين الهيدر وإضافة اللون الأحمر */
+header {
+    padding: 70px;
+    
+    background: linear-gradient(to right, #00bfff, hsl(220, 92%, 23%));
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fffdfd; /* 🔴 لون أحمر بارز */
+    text-shadow: 2px 2px 10px rgba(205, 204, 212, 0.7);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 20px;
+}
+p{
+
+    text-shadow: 2px 2px 10px rgba(8, 8, 11, 0.7);
+
+}
+
+/* 🔴 تحسين قائمة المهارات */
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: #0980ff;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* 🔴 تحسين زر تغيير الوضع */
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ff0000;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* 🔴 تأثير عند تمرير الماوس */
+#dark-mode-toggle:hover {
+    background: #0762e9;
+}
+
+/* ✅ تحسين الوضع الفاتح */
+.light-mode {
+    background: #ffffff;
+    color: #1a1a1a;
+}
+
+.light-mode h1 {
+    color: #210f0f;
+}
+
+.light-mode h2 {
+    color: black;
+}
+
+
+.light-mode .project p {
+    color: black;
+}
+.light-mode #contactForm input,
+.light-mode #contactForm textarea {
+  border: 1px solid black;
+  color: #000;
+}
+
+/* ✅ تحسين زر تغيير الوضع في الوضع الفاتح */
+.light-mode #dark-mode-toggle {
+    background: #000;
+    color: white;
+}
+
+.light-mode #dark-mode-toggle:hover {
+    background: #ff0000;
+}
+
+/* ✅ تعديل لون المشاريع */
+.light-mode .project {
+    background: rgba(254, 249, 249, 0.05);
+    color: black;
+}
+
+.light-mode .project:hover {
+    background: linear-gradient(to right, #ff0000, #0072ff);
+    color: white;
+}
+
+/* ✅ تعديل لون المهارات */
+.light-mode ul li {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode ul li:hover {
+    background: #ff0000;
+    color: white;
+}
+
+/* ✅ تعديل لون زر الإرسال */
+.light-mode form button {
+    background: #ff0000;
+    color: white;
+}
+
+.light-mode form button:hover {
+    background: #b30000;
+}
+
+/* ✅ تحسين تفاعل المشاريع */
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+}
+.container h2 {
+margin: 40px;
+color: black;
+}
+
+.container p {
+    text-shadow: 2px 2px 10px rgba(0, 64, 255, 0.7);
+    
+    }
+
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔴 تحسين التأثير عند تمرير الماوس */
+.project:hover {
+    background: linear-gradient(to right, #ff0000, #0072ff);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.5);
+}
+
+/* تحسين العناوين داخل المشاريع */
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+    color: rgb(242, 5, 5);
+}
+
+.project p {
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+    color: rgb(10, 8, 8);
+}
+
+/* تغيير لون النص عند التفاعل */
+.project:hover h3,
+.project:hover p {
+    color: white;
+}
+
+/* 🔴 تحسين استجابة التصميم للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    form input, form textarea, form button {
+        width: 100%;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+}
+
+/* ضبط حجم الحقول */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: 0.3s;
+}
+
+/* تحسين أزرار الإدخال */
+form input:focus, form textarea:focus {
+    border: 2px solid #00c6ff;
+}
+
+/* تحسين زر الإرسال */
+form button {
+    width: 100%; /* اجعل الزر بنفس عرض الحقول */
+    padding: 12px;
+    background: #00c6ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* تحسين التأثير عند تمرير الماوس */
+form button:hover {
+    background: #005bb5;
+    transform: scale(1.05);
+}
+
+/* تحسين استجابة التصميم للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    form input, form textarea, form button {
+        width: 100%;
+    }
+}
